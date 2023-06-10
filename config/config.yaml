@@ -1,0 +1,7 @@
+log:
+  level: 4
+manager:
+  threadNumber: 1
+  controllerMaxRetryTimes: 5
+  reSyncPeriod: 300
+  threadTimeout: 3
