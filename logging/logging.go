@@ -40,7 +40,7 @@ func init() {
 		level = loggingLevel[LevelDebug]
 	}
 	// Set klog log level
-	flag.Set("v", strconv.Itoa(int(level)))
+	_ = flag.CommandLine.Set("v", strconv.Itoa(int(level)))
 }
 
 // Logging struct
