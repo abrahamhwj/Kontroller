@@ -32,8 +32,11 @@ var Cfg Config
 // init initializes the configuration
 func init() {
 	// Set the configuration file name and path
-	viper.SetConfigName("Config")
+	viper.SetConfigName("config")
+	viper.AddConfigPath("../config")
 	viper.AddConfigPath("./config")
+	viper.AddConfigPath("..")
+	viper.AddConfigPath(".")
 	viper.SetConfigType("yaml")
 	// Set default values for configuration settings
 	viper.SetDefault("log.level", 4)
